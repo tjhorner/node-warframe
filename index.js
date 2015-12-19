@@ -98,7 +98,7 @@ function Warframe(params){
       nonce = _this.currentAccount.Nonce;
     }
 
-    _this._post("inventory", {}, true, callback);
+    _this._post("inventory", { accountId: id, nonce: nonce }, true, callback);
   };
 
   this.pendingRecipes = function(id, nonce, callback){
@@ -110,7 +110,7 @@ function Warframe(params){
       nonce = _this.currentAccount.Nonce;
     }
 
-    _this._get("checkPendingRecipes", {}, callback);
+    _this._get("checkPendingRecipes", { accountId: id, nonce: nonce }, callback);
   };
 
   this.friends = function(id, nonce, callback){
@@ -122,7 +122,7 @@ function Warframe(params){
       nonce = _this.currentAccount.Nonce;
     }
 
-    _this._get("getFriends", {}, callback);
+    _this._get("getFriends", { accountId: id, nonce: nonce }, callback);
   };
 
   this.credits = function(id, nonce, callback){
@@ -134,7 +134,7 @@ function Warframe(params){
       nonce = _this.currentAccount.Nonce;
     }
 
-    _this._get("credits", {}, callback);
+    _this._get("credits", { accountId: id, nonce: nonce }, callback);
   };
 
   return this;

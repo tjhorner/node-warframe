@@ -1,6 +1,6 @@
 {
   "name": "warframe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node module for interfacing with the Warframe API",
   "main": "index.js",
   "scripts": {
