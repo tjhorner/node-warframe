@@ -1,0 +1,17 @@
+{
+  "name": "warframe",
+  "version": "1.0.0",
+  "description": "Node module for interfacing with the Warframe API",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test"
+  },
+  "author": "TJ Horner <me@horner.tj>",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.67.0"
+  },
+  "devDependencies": {
+    "colors": "^1.1.2"
+  }
+}
