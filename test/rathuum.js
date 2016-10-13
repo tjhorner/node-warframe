@@ -14,14 +14,14 @@ warframe.login(config.login.username, config.login.password, function(res){
             
             warframe.viewPlayer(config.login.username, config.login.password, member._id.$id, function(data){
                 
-                console.log("username:" + member.DisplayName);
-                console.log("id:" + member._id.$id + "\n");
-                
                 var playerinfo = JSON.parse(data);
+                
+                console.log('"username": ' + '"' + member.DisplayName + '"');
+                console.log('"id": ' + '"' + member._id.$id + '"');
                 try {
-                    console.log("Rathuum:", playerinfo.KelaEventBonusScoreMax)
+                    console.log('"Rathuum": ' + playerinfo.KelaEventBonusScoreMax + "\r\n");
                 } catch (err) {
-                    console.log("Rathuum: 0")
+                    console.log('"Rathuum": 0\r\n')
                 };
                 
                 //console.log(playerinfo);
