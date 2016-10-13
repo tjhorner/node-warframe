@@ -8,6 +8,7 @@ warframe.login(config.login.username, config.login.password, function(res){
     warframe.getGuild(function(view){
         
         var guild = JSON.parse(view);
+        var counter = 0;
         
         guild.Members.forEach(function(member){
 
@@ -15,6 +16,7 @@ warframe.login(config.login.username, config.login.password, function(res){
                 console.log("username:", member.DisplayName, "id:", member._id.$id);
                 var playerinfo = JSON.parse(data);
                 console.log(playerinfo);
+                console.log(counter++);
             });
             
         });
