@@ -1,2 +1,6 @@
 test/test_config.json
+test/data/
+test/views/
+test/userdata/
+test/test_config*
 node_modules/

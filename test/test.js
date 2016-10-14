@@ -6,9 +6,10 @@ var config = require('./test_config.json'),
 
 warframe.login(config.login.username, config.login.password, function(res){
   console.log("Welcome,", warframe.currentAccount.DisplayName.cyan);
+    console.log("Auth nonce:", warframe.currentAccount.Nonce)
 
   warframe.pendingRecipes(function(inv){
-    console.log("You have", inv.PendingRecipes.length, "pending recipes.\n");
+    console.log("You have", inv.PendingRecipes, "pending recipes.\n");
   });
 
   warframe.friends(function(friends){

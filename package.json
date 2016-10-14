@@ -6,12 +6,37 @@
   "scripts": {
     "test": "node test/test"
   },
-  "author": "TJ Horner <me@horner.tj>",
+  "author": {
+    "name": "TJ Horner",
+    "email": "me@horner.tj"
+  },
   "license": "ISC",
   "dependencies": {
     "request": "^2.67.0"
   },
   "devDependencies": {
     "colors": "^1.1.2"
-  }
+  },
+  "gitHead": "33e83e1b8ab8c275d9a698f07fefd9cc12047ead",
+  "_id": "warframe@1.0.1",
+  "_shasum": "74cec316506368aa27d9b85e75b897bb843c9bb9",
+  "_from": "warframe@latest",
+  "_npmVersion": "2.14.7",
+  "_nodeVersion": "4.2.2",
+  "_npmUser": {
+    "name": "tjhorner",
+    "email": "me@tjhorner.com"
+  },
+  "dist": {
+    "shasum": "74cec316506368aa27d9b85e75b897bb843c9bb9",
+    "tarball": "https://registry.npmjs.org/warframe/-/warframe-1.0.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "tjhorner",
+      "email": "me@tjhorner.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/warframe/-/warframe-1.0.1.tgz"
 }
