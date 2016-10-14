@@ -21,7 +21,7 @@ warframe.login(config.login.username, config.login.password, function(res){
                 try {
                     console.log('"Rathuum": ' + playerinfo.KelaEventBonusScoreMax + "\r\n");
                 } catch (err) {
-                    console.log('"Rathuum": 0\r\n')
+                    console.log('"Rathuum": 0\r\n');
                 };
                 
                 //console.log(playerinfo);
@@ -32,4 +32,5 @@ warframe.login(config.login.username, config.login.password, function(res){
         });
         
     });
+    
 });
