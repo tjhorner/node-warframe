@@ -8,7 +8,6 @@ function Warframe(params){
   var STATS_BASE = "https://api.warframe.com/stats/";
     
   if(params && params.storeAccount) storeAccount = true;
-  console.log(params);
 
   this.currentAccount = {
     DisplayName: "",

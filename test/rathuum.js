@@ -19,9 +19,13 @@ warframe.login(config.login.username, config.login.password, function(res){
                 console.log('"username": ' + '"' + member.DisplayName + '"');
                 console.log('"id": ' + '"' + member._id.$id + '"');
                 try {
-                    console.log('"Rathuum": ' + playerinfo.KelaEventBonusScoreMax + "\r\n");
+                    if (playerinfo.KelaEventBonusScoreMax == undefined) {
+                        console.log('"Rathuum": 0\r\n');
+                    } else {
+                        console.log('"Rathuum": ' + playerinfo.KelaEventBonusScoreMax + "\r\n");
+                    }
                 } catch (err) {
-                    console.log('"Rathuum": 0\r\n');
+                    console.log('error');
                 };
                 
                 //console.log(playerinfo);
